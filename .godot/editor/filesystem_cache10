@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1759080724
+::res://::1759080904
 icon.svg::CompressedTexture2D::3508475895716105869::1759053825::1759054547::1::::<><><>0<>0<>365dac0436db157a1f58ba36382ecbb8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1759053948::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1759077445
@@ -55,7 +55,7 @@ icon.svg::CompressedTexture2D::3508475895716105869::1759078505::1759078849::1:::
 Mute_button.gd::GDScript::4777038063019855456::1759078505::0::1::::<>TextureButton<><>0<>0<><>::
 scena2.tscn::PackedScene::4317028163488268984::1759078849::0::1::::<><><>0<>0<><>::uid://b5pnxcrv5d6bk::::res://Main/assets/img/world-of-warships-battlefield.jpg
 ::res://Main/assets/::1759078505
-::res://Main/assets/img/::1759080724
+::res://Main/assets/img/::1759080725
 battleship_warfare_resized.png::CompressedTexture2D::8918148610657601324::1759078505::1759078849::1::::<><><>0<>0<>400780e59bd6884ba587b79129a01919<>res://.godot/imported/battleship_warfare_resized.png-5a722fe8872271bec864a407e8704285.ctex::
 Gioca.png::CompressedTexture2D::2308565186818082134::1759078505::1759078849::1::::<><><>0<>0<>20dc25579365dbabf5e22017f0f0f7c1<>res://.godot/imported/Gioca.png-c7fbeaa028f0212e81f27cbe44c5fa15.ctex::
 Mute_Button.png::CompressedTexture2D::6638651468887363645::1759078505::1759078849::1::::<><><>0<>0<>a3c1ba32872714d589d907003b1187c0<>res://.godot/imported/Mute_Button.png-cf2a6c0b8ec67e012ee919b17cc3c589.ctex::
@@ -65,11 +65,10 @@ victory_resized.png::CompressedTexture2D::1273141576627758828::1759080650::17590
 world-of-warships-battlefield.jpg::CompressedTexture2D::4523882185613508992::1759078505::1759078849::1::::<><><>0<>0<>4cab375a66c2eb77901d23ee4a2a2057<>res://.godot/imported/world-of-warships-battlefield.jpg-8c2b64f6fb67d01655766bf685ac8d01.ctex::
 ::res://Main/assets/sounds/::1759078849
 epic-war-background-music-333128.mp3::AudioStreamMP3::6631853560460649734::1759078505::1759078849::1::::<><><>0<>0<>e5c3ef463f5ff7296dcdc223d8a963c3<>res://.godot/imported/epic-war-background-music-333128.mp3-8af0be0592f869fb52a9ce6b285ad42b.mp3str::
-::res://Main/VictoryPage/::1759080724
-VictoryPage.tscn::PackedScene::8575001766726508507::1759080650::0::1::::<><><>0<>0<><>::uid://d2n5cich6u3v2::::res://victory_page.gd<>uid://bf2owv3p232no::::res://assets/img/Unmute_Button.png<>uid://c1t2vcptt146l::::res://assets/img/Mute_Button.png<>uid://c1qrwob1sqbc5::::res://assets/sounds/epic-war-background-music-333128.mp3<>uid://cacbebr02d73a::::res://Mute_button.gd<>uid://75jy4ovyaeiw::::res://assets/img/Gioca.png<>uid://mtcje5w7ric::::res://assets/img/victory_resized.png
+::res://Main/VictoryPage/::1759080851
+VictoryPage.tscn::PackedScene::8575001766726508507::1759080851::0::1::::<><><>0<>0<><>::uid://d2n5cich6u3v2::::res://Main/VictoryPage/victory_page.gd<>uid://seypq4e256ei::::res://Main/assets/img/victory_resized.png<>uid://bf2owv3p232no::::res://Main/assets/img/Unmute_Button.png<>uid://c1t2vcptt146l::::res://Main/assets/img/Mute_Button.png<>uid://c1qrwob1sqbc5::::res://Main/assets/sounds/epic-war-background-music-333128.mp3<>uid://cacbebr02d73a::::res://Main/Mute_button.gd<>uid://75jy4ovyaeiw::::res://Main/assets/img/Gioca.png
 victory_page.gd::GDScript::9083023245116461893::1759080674::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Scene/::1759080685
-CampoDx.cs::CSharpScript::6618752813100158398::1759056837::0::1::::<>TileMapLayer<><>0<>0<><>::
 campo_sx.gd::GDScript::1648355732128921073::1759080685::0::1::::<>Node2D<><>0<>0<><>::
 GenShip.gd::GDScript::6621687895824381516::1759071598::0::1::::<>Button<><>0<>0<><>::
 main.tscn::PackedScene::793573712050078043::1759080684::0::1::::<><><>0<>0<><>::uid://cljd0ewiy3a5h::::res://Assets/Sea/Sea1.png<>uid://xqqgb4jhov74::::res://Scene/campo_sx.gd<>uid://mkx4hwn3npgw::::res://Assets/ships/carrier.png<>uid://cy1d8ti7gvrrh::::res://Assets/ships/destroyer.png<>uid://c1luh5or6kyw7::::res://Scene/GenShip.gd<>uid://chhcc33opghrk::::res://Assets/ships/submarine.png<>uid://br30cnk0ht8c0::::res://Assets/ships/download.png<>uid://cgjk5mwd62od::::res://Assets/Black.jpg<>uid://b7sm5oqhohs5a::::res://Assets/ships/corvette.png<>uid://b3djwu8fsg61n::::res://Scene/pass.gd<>uid://8kfrjfjms63l::::res://Assets/ships/sm_ship.png<>uid://bnit6j8bdfdwj::::res://Assets/ships/patrol_vessel.png<>uid://86vmj4ktja13::::res://Scene/poceed.gd<>uid://dggr43j5pd5ph::::res://Assets/Splash/Splash.tres<>uid://yil4ix4wwpnh::::res://Assets/explosion/explosion.tres
