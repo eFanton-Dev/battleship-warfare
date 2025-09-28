@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://duf2a5mxvimyl"]
+
+[ext_resource type="Script" uid="uid://d2n5cich6u3v2" path="res://Main/VictoryPage/victory_page.gd" id="1_dmrjp"]
+[ext_resource type="Texture2D" uid="uid://seypq4e256ei" path="res://Main/assets/img/victory_resized.png" id="2_2y2so"]
+[ext_resource type="Texture2D" uid="uid://bf2owv3p232no" path="res://Main/assets/img/Unmute_Button.png" id="2_uhw0s"]
+[ext_resource type="Texture2D" uid="uid://c1t2vcptt146l" path="res://Main/assets/img/Mute_Button.png" id="3_6jdrd"]
+[ext_resource type="AudioStream" uid="uid://c1qrwob1sqbc5" path="res://Main/assets/sounds/epic-war-background-music-333128.mp3" id="3_20s3s"]
+[ext_resource type="Script" uid="uid://cacbebr02d73a" path="res://Main/Mute_button.gd" id="4_5rwhn"]
+[ext_resource type="Texture2D" uid="uid://75jy4ovyaeiw" path="res://Main/assets/img/Gioca.png" id="4_uhw0s"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_dmrjp")
+
+[node name="Sfondo" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_2y2so")
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sfondo"]
+stream = ExtResource("3_20s3s")
+autoplay = true
+parameters/looping = false
+
+[node name="Gioca" type="TextureButton" parent="."]
+offset_left = 86.0
+offset_top = 502.0
+offset_right = 216.0
+offset_bottom = 589.0
+texture_normal = ExtResource("4_uhw0s")
+metadata/_edit_lock_ = true
+
+[node name="Mute_Button" type="TextureButton" parent="."]
+offset_left = 1049.0
+offset_top = 39.0
+offset_right = 1099.0
+offset_bottom = 89.0
+toggle_mode = true
+texture_normal = ExtResource("2_uhw0s")
+texture_pressed = ExtResource("3_6jdrd")
+script = ExtResource("4_5rwhn")
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="Gioca" to="." method="_on_gioca_pressed"]
+[connection signal="pressed" from="Mute_Button" to="Mute_Button" method="_on_pressed"]

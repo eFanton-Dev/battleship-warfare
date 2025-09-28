@@ -51,7 +51,7 @@ func checkCoo(coo : Vector2):
 			createCross("res://Assets/HitCross.png", anim_coo)
 			other.remove_child(child)
 			if other.get_children().size() == 0:
-				get_tree().change_scene_to_file("res://Main/HomePage.tscn")
+				get_tree().change_scene_to_file("res://Main/VictoryPage/VictoryPage.tscn")
 			return
 		else:
 			var anim_coo = other.map_to_local(coo)
