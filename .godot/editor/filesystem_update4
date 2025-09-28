@@ -1,0 +1,10 @@
+res://Scene/main.tscn
+res://Scene/campo_sx.gd
+res://Scene/CampoDx.cs
+res://Scene/GenShip.gd
+res://Scene/poceed.gd
+res://Assets/Splash/Splash.tres
+res://Assets/explosion/explosion.tres
+res://Scene/pass.gd
+res://Main to import/home_page.gd
+res://Main to import/HomePage.tscn

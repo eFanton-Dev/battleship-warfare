@@ -1,0 +1,76 @@
+[gd_scene load_steps=12 format=3 uid="uid://bt01skmxovaep"]
+
+[ext_resource type="Script" uid="uid://cijlx4e8eq4op" path="res://home_page.gd" id="1_ctv2x"]
+[ext_resource type="Texture2D" uid="uid://d0caus8ssnroe" path="res://assets/img/battleship_warfare_resized.png" id="2_d4t8q"]
+[ext_resource type="Texture2D" uid="uid://75jy4ovyaeiw" path="res://assets/img/Gioca.png" id="3_i8ueo"]
+[ext_resource type="AudioStream" uid="uid://c1qrwob1sqbc5" path="res://assets/sounds/epic-war-background-music-333128.mp3" id="3_pth5b"]
+[ext_resource type="Script" uid="uid://3ydqghayy8ti" path="res://Gioca_button.gd" id="4_iccsg"]
+[ext_resource type="Texture2D" uid="uid://dv0x8inlutait" path="res://assets/img/Regole.png" id="5_n80uh"]
+[ext_resource type="Texture2D" uid="uid://c1t2vcptt146l" path="res://assets/img/Mute_Button.png" id="7_3ejil"]
+[ext_resource type="Script" uid="uid://cacbebr02d73a" path="res://Mute_button.gd" id="8_k8qqs"]
+[ext_resource type="Texture2D" uid="uid://bf2owv3p232no" path="res://assets/img/Unmute_Button.png" id="9_g5peu"]
+[ext_resource type="Script" uid="uid://dqonbtmx5fcla" path="res://regole_popup.gd" id="10_pth5b"]
+
+[sub_resource type="GDScript" id="GDScript_n80uh"]
+script/source = "extends AudioStreamPlayer
+
+func _ready() -> void:
+	var music = AudioServer.get_bus_index(\"Master\")
+	AudioServer.set_bus_mute(music, true)
+	
+"
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ctv2x")
+
+[node name="Sfondo" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_d4t8q")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sfondo"]
+stream = ExtResource("3_pth5b")
+autoplay = true
+parameters/looping = false
+script = SubResource("GDScript_n80uh")
+
+[node name="Gioca" type="TextureButton" parent="."]
+offset_left = 90.0
+offset_top = 466.0
+offset_right = 220.0
+offset_bottom = 553.0
+texture_normal = ExtResource("3_i8ueo")
+script = ExtResource("4_iccsg")
+metadata/_edit_lock_ = true
+
+[node name="Regole" type="TextureButton" parent="Gioca"]
+layout_mode = 0
+offset_left = 852.0
+offset_top = 2.0
+offset_right = 982.0
+offset_bottom = 87.0
+texture_normal = ExtResource("5_n80uh")
+metadata/_edit_lock_ = true
+
+[node name="Mute_Button" type="TextureButton" parent="."]
+offset_left = 1049.0
+offset_top = 39.0
+offset_right = 1099.0
+offset_bottom = 89.0
+toggle_mode = true
+texture_normal = ExtResource("9_g5peu")
+texture_pressed = ExtResource("7_3ejil")
+script = ExtResource("8_k8qqs")
+metadata/_edit_lock_ = true
+
+[node name="Regole" type="PopupPanel" parent="."]
+oversampling_override = 1.0
+position = Vector2i(76, 74)
+size = Vector2i(1000, 500)
+visible = true
+script = ExtResource("10_pth5b")
+
+[connection signal="pressed" from="Gioca" to="." method="_on_gioca_pressed"]
+[connection signal="pressed" from="Mute_Button" to="Mute_Button" method="_on_pressed"]
