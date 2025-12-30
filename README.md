@@ -7,4 +7,4 @@ One of the player win when they manage to destroy all the enemy ships.
 
 This game created for the Daydreams event in Padua. Such event consisted in a 8 hour long competition during which a group of 4 had to create a game.
 
-Daydreams game
+Play now on: <a herf="https://efanton-dev.itch.io/battleship-warfare">https://efanton-dev.itch.io/battleship-warfare</a>
